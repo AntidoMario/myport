@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon
+    ">
+    <link rel="stylesheet" href="./styles/transition.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/934416620f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="high-light"></div>
+    <header id="">
+      <nav>
+        <div class="right bold"><a class="light">A</a> n t i d o .</div>
+        <!-- <div class="left"> -->
+        <ul id="sidemenu">
+          <li><a href="#firstSection">Home</a></li>
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark light fas" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars light fas" onclick="openmenu()"></i>
+        <!-- </div> -->
+      </nav>
+    </header>   
+
+    <main>
+      <section id="firstSection">
+        <div class="leftSection">
+          Hi, I am Antido.<br />A passionate<br />
+          <a class="type">GCC IT STUDENT. </a>
+        </div>
+        <div class="rightSection">
+          <img src="./images/mern-logo.png" alt="" class="mern" />
+        </div>
+      </section>
+
+      <!-- ABOUT Me-->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./images/myportfolio.png" alt="me" />
+            </div>
+            <div class="about-col-2">
+              <h2 class="bold">ABOUT ME</h2>
+              <div>
+                <p>
+                 I'm passionate about crafting responsive and engaging web experiences using HTML5, CSS3, and JavaScript, along with popular frameworks like React, Bootstrap, and jQuery. With a enthusiasm for backend development using technologies such as Node.js and MongoDB, I'm excited to explore new opportunities to apply my skills and collaborate on projects.
+                </p>
+              </div>
+
+              <div class="tab-titles">
+                <div class="tab-links active-tab" onclick="opentab('Skills')">
+                  Skills
+                </div>
+              </div>
+
+              <div class="tab-contents " id="Skills">
+                <ul>
+                  <li className='item'>
+                    <p>Front-End</p>
+                    <span>
+                    HTML, CSS, JS, Bootstrap, JQuery, ReactJS, Redux, MaterialUI
+                    </span>
+                    <p>Back-End</p>
+                    <span>
+                     NodeJS, Express, MongoDB, Mongoose
+                    </span>
+                    <p>Languages</p>
+                    <span>
+                      C, JavaScript
+                    </span>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- Portfolio -------- -->
+   
+
+      <!----------projects-------- -->
+ 
+      <h2 class="bold sub-title">ACTIVITIES</h2>
+      <section id="projects" class="projects-list">
+        <div class="projectItem">
+          <img src="./images/Screenshot 2024-03-21 111050.png" alt="...">
+          <div class="card-content">
+            <p class="card-text">
+              <h2 class="projectTitle">ACTIVITY 1 <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h2></a>
+              <a href=""><i class="fa-brands fa-square-github icon"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="projectItem">
+          <img src="./images/todo.png" alt="...">
+          <div class="card-content">
+            <p class="card-text">
+              <h2 class="projectTitle">ACTIVITY 2</h2>
+              <a href=""><i class="fa-brands fa-square-github icon"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="projectItem">
+          <img src="./images/quiz.png"  alt="...">
+          <div class="card-content">
+            <p class="card-text"> 
+              <h2 class="projectTitle">ACTIVITY 3</h2>
+              <a href=""><i class="fa-brands fa-square-github icon"></i></a>
+            </p>
+          </div>
+      </section>
+
+
+      <!-- -------- About -------- -->
+      <div id="contact">
+        <div class="container">
+          <h2 class="sub-title">Contact Information</h2>
+          <div class="row">
+            <div class="contact-left">
+              <p>
+                <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+                ajmarantido101@gmail.com
+              </p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/minahil-shafique/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/AntidoMario"><i class="fa-brands fa-square-github"></i></a>
+              </div>
+              <a href="./images/Resume.pdf" download="" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+              <form>
+                <input type="text" name="Name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea
+                  rows="6"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+                <button type="submit" class="btn submit bold">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

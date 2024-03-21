@@ -1,0 +1,51 @@
+/*  */
+* {
+  margin: 0;
+  padding: o;
+}
+body {
+  font-family: poppins;
+  background-color: #102952;
+  color: #faf0e4;
+}
+.high-light{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0, 0, 0, 0.263) 20%);
+}
+/* Untility  */
+.bold {
+  font-weight: bold;
+}
+.light {
+  color: #99c4fc;
+}
+.padding {
+  padding: 10px;
+}
+.white {
+  color: white;
+  text-decoration: none;
+}
+
+.large{
+  font-size: x-large;
+}
+
+.height{
+  height: 300px;
+}
+a{
+  text-decoration: none;
+}
+
+.sub-title{
+  margin-left: 10px;
+}
+.height{
+  font-size: 12px;
+}
