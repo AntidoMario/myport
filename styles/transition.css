@@ -1,6 +1,7 @@
 html{
   scroll-behavior: smooth;
 }
+
 nav {
   height: 70px;
   display: flex;
@@ -8,14 +9,17 @@ nav {
   align-items: center;
   background-color: #3a598a44;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
 }
+
 nav ul li {
   list-style: none;
   margin: 0 15px;
 }
+
 .right {
   font-size: 1.4rem;
 }
@@ -29,11 +33,13 @@ nav ul li {
 .leftSection {
   font-size: 1.7rem;
 }
+
 .about_container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .me {
   flex-basis: 35%;
 }
