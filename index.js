@@ -2,16 +2,23 @@ let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
 
 function opentab(tabName) {
-  for (i of tablinks) {
-    i.classList.remove("active-link");
+  
+  var isActive = document.getElementById(tabName).classList.contains("active-tab");
+
+  for (var i = 0; i < tabcontents.length; i++) {
+    tabcontents[i].classList.remove("active-tab");
   }
 
-  for (i of tabcontents) {
-    i.classList.remove("active-tab");
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active-link");
   }
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabName).classList.add("active-tab");
+
+  if (!isActive) {
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+  }
 }
+
 
 let sideMenu = document.getElementById("sidemenu");
 function openmenu() {
