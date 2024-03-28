@@ -1,23 +1,26 @@
 let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabName) {
-  
-  var isActive = document.getElementById(tabName).classList.contains("active-tab");
+  function opentab(tabName) {
+    var isActive = document.getElementById(tabName).classList.contains("active-tab");
 
-  for (var i = 0; i < tabcontents.length; i++) {
-    tabcontents[i].classList.remove("active-tab");
+    var tabcontents = document.querySelectorAll('.tab-contents');
+    var tablinks = document.querySelectorAll('.tab-links');
+
+    for (var i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].style.display = "none";
+    }
+
+    for (var i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active-link");
+    }
+
+    if (!isActive) {
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabName).style.display = "block";
+    }
   }
 
-  for (var i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active-link");
-  }
-
-  if (!isActive) {
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabName).classList.add("active-tab");
-  }
-}
 
 
 let sideMenu = document.getElementById("sidemenu");

@@ -72,18 +72,24 @@
                 <div class="tab-links active-tab" onclick="opentab('Skills')">
                   Skills
                 </div>
+                <div class="tab-links active-tab" onclick="opentab('Understand')">
+                  Understand
+                </div>
+                <div class="tab-links active-tab" onclick="opentab('Confused')">
+                  Confused
+                </div>
               </div>
-
-              <div class="tab-contents " id="Skills">
+              
+              <div class="tab-contents" id="Skills">
                 <ul>
-                  <li className='item'>
+                  <li class='item'>
                     <p>Front-End</p>
                     <span>
-                    HTML, CSS, JS, Bootstrap, JQuery, ReactJS
+                      HTML, CSS, JS, Bootstrap
                     </span>
                     <p>Back-End</p>
                     <span>
-                     NodeJS
+                      None
                     </span>
                     <p>Languages</p>
                     <span>
@@ -91,28 +97,43 @@
                     </span>
                   </li>
                 </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+              </div>
+              
+              <div class="tab-contents" id="Understand" style="display: none;">
+                <ul>
+                  <li class='item'>
+                    <!-- Lessons you understand can be listed here -->
+                    <p>JavaScript Basics</p>
+                    <span>
+                          Variable: Stores data <br>
+                          Arrow Functions <br>
+                          Deconstructing <br>
+                          Imports & Export <br>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="tab-contents" id="Confused" style="display: none;">
+                <ul>
+                  <li class='item'>
+                    <p>Advanced JavaScript Concepts</p>
+                      <span>
+                          Arrays <br>
+                          Event Loop: Handles tasks.
+                      </span>
+                  </li>
+                </ul>
+              </div>
+</section>
 
       <!---------- Portfolio -------- -->
    
 
       <!----------ACTIVITIES-------- -->
  
-      <h2 class="bold sub-title">ACTIVITIES & WHAT I LEARNED</h2>
+      <h2 class="bold sub-title">ACTIVITIES</h2>
       <section id="projects" class="projects-list">
-        <div class="projectItem">
-          <img src="./images/what I learned.png" alt="...">
-          <div class="card-content">
-            <p class="card-text">
-              <h2 class="projectTitle">WHAT I LEARNED <a href="https://antidomario.github.io/whatIlearned/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h2></a>
-              <a href="https://github.com/AntidoMario/whatIlearned"><i class="fa-brands fa-square-github icon"></i></a>
-            </p>
-          </div>
-        </div>
-
         <div class="projectItem">
           <img src="./images/act1.png" alt="...">
           <div class="card-content">
@@ -127,7 +148,6 @@
           <img src="./images/ac2.png"  alt="...">
           <div class="card-content">
             <p class="card-text">
-
               <h2 class="projectTitle">ACTIVITY 2 <a href="https://antidomario.github.io/Kentaro/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h2>
               <a href="https://github.com/AntidoMario/Kentaro"><i class="fa-brands fa-square-github icon"></i></a>
             </p>
